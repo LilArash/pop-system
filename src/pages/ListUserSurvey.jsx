@@ -16,7 +16,7 @@ export function ListUserSurvey() {
     }, []);
 
     return (
-       <div className="flex gap-4 m-4">
+       <div className="flex flex-wrap justify-center gap-4 m-4">
             {surveys.map((survey) => {
                 return (
                     <UserSurveyCard key={survey.surveyId} surveyId={survey.surveyId} 

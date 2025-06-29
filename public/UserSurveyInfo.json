@@ -1,0 +1,15 @@
+{
+  "surveyId": 3,
+  "title": "پیشنهاد",
+  "text": "توضیحات",
+  "latitude": "32.658336",
+  "longitude": "51.676941",
+  "createAt": "1404/04/06",
+  "endAt": "",
+  "status": false,
+  "percentage_of_approvers": 0,
+  "number_of_approvers": 0,
+  "percentage_of_rejectors": 0,
+  "number_of_rejects": 0,
+  "number_of_participants": 0
+}

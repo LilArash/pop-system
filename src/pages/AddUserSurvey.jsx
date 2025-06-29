@@ -51,7 +51,8 @@ export function AddUserSurvey() {
                     </div>
                     <MapPicker onSelectLocation={setLocation} />
                 </div>
-                <button className="w-full mt-8 p-2 rounded-lg bg-white outline-none border text-green-500 border-green-500"
+                <button className="w-full mt-8 p-2 rounded-lg bg-white outline-none border 
+                text-green-500 border-green-500 hover:bg-green-500 hover:text-white transition-colors"
                     type="submit">
                     ثبت نظر
                 </button>
