@@ -28,21 +28,23 @@ export function UserSurveyInfo() {
     }
 
     return (
-        <div className="m-4 flex flex-col">
-            <div className="flex gap-2 text-gray-400 items-center m-4">
-                <FontAwesomeIcon className="text-gray-500" icon={faArrowRight} />
-                <span>بازگشت به صفحه نظرات</span>
+        <div className="max-w-4xl mx-auto">
+            <div className="m-4 flex flex-col">
+                <div className="flex gap-2 text-gray-400 items-center m-4">
+                    <FontAwesomeIcon className="text-gray-500" icon={faArrowRight} />
+                    <span>بازگشت به صفحه نظرات</span>
+                </div>
+                {survey ? (
+                    <StaticMap latitude={survey.latitude} longitude={survey.longitude} />
+                ) : (
+                    <p className="text-sm text-gray-500">در حال بارگذاری نقشه...</p>
+                )}
+                <div className="mt-4 space-y-4">
+                    <h2 className="text-3xl text-gray-700">{survey.title}</h2>
+                    <p className="text-xl text-gray-400">{survey.text}</p>
+                </div>
+                <CommentComponent />
             </div>
-            {survey ? (
-                <StaticMap latitude={survey.latitude} longitude={survey.longitude} />
-            ) : (
-                <p className="text-sm text-gray-500">در حال بارگذاری نقشه...</p>
-            )}
-            <div className="mt-4 space-y-4">
-                <h2 className="text-3xl text-gray-700">{survey.title}</h2>
-                <p className="text-xl text-gray-400">{survey.text}</p>
-            </div>
-            <CommentComponent />
         </div>
     )
 }
